@@ -9,73 +9,60 @@
     <!-- AOS (Animate on Scroll) Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        /* Custom smooth background gradient animation */
+        /* Custom smooth dark gradient animation */
         @keyframes gradientBG {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
         .animated-bg {
-            background: linear-gradient(-45deg, #0f172a, #1e1b4b, #311042, #0f172a);
+            background: linear-gradient(-45deg, #050505, #120305, #1c0509, #050505);
             background-size: 400% 400%;
             animation: gradientBG 15s ease infinite;
         }
     </style>
 </head>
-<body class="animated-bg text-white min-h-screen flex flex-col justify-between font-sans selection:bg-purple-500 selection:text-white">
+<body class="animated-bg text-white min-h-screen flex flex-col justify-between font-sans selection:bg-red-600 selection:text-white">
 
     <!-- Header / Navbar -->
     <header class="w-full p-6 flex justify-between items-center max-w-6xl mx-auto" data-aos="fade-down" data-aos-duration="1000">
-        <h1 class="text-2xl font-extrabold tracking-wider bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+        <h1 class="text-2xl font-extrabold tracking-wider bg-gradient-to-r from-red-500 to-white bg-clip-text text-transparent">
             xAk19x.dev
         </h1>
-        <nav class="space-x-6 text-gray-300">
-            <a href="#about" class="hover:text-purple-400 transition">About</a>
-            <a href="#projects" class="hover:text-purple-400 transition">Projects</a>
-            <a href="#contact" class="hover:text-purple-400 transition">Contact</a>
+        <nav class="space-x-6 text-gray-400">
+            <a href="#about" class="hover:text-red-500 transition">About</a>
+            <a href="#contact" class="hover:text-red-500 transition">Contact</a>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <main class="max-w-4xl mx-auto px-6 text-center my-auto py-20">
         <div data-aos="zoom-in" data-aos-duration="1200">
-            <span class="px-4 py-1.5 rounded-full text-sm font-medium bg-purple-900/50 border border-purple-700 text-purple-300 inline-block mb-6">
+            <span class="px-4 py-1.5 rounded-full text-sm font-medium bg-red-950/40 border border-red-800/50 text-red-400 inline-block mb-6">
                 🚀 Welcome to my digital space
             </span>
             <h2 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
-                Building the Future, <br>
-                <span class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-400 bg-clip-text text-transparent">
-                    One Line at a Time.
+                Roblox Game <br>
+                <span class="bg-gradient-to-r from-red-500 via-red-400 to-white bg-clip-text text-transparent">
+                    Developer.
                 </span>
             </h2>
-            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10">
-                I am a developer passionate about creating immersive web experiences, clean code, and cool animations.
+            <p class="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+                Roblox Game Developer & B.Tech CSE Student. Passionate about programming, creating immersive experiences, and constantly exploring new tech.
             </p>
             <div class="flex justify-center gap-4">
-                <a href="#projects" class="px-8 py-3 rounded-xl bg-purple-600 hover:bg-purple-500 font-semibold shadow-lg shadow-purple-600/30 transition transform hover:-translate-y-1">
-                    View Projects
+                <a href="https://ak19.carrd.co/" target="_blank" class="px-8 py-3 rounded-xl bg-red-600 hover:bg-red-700 text-white font-semibold shadow-lg shadow-red-900/40 transition transform hover:-translate-y-1">
+                    My Carrd
                 </a>
-                <a href="https://github.com/xAk19x" target="_blank" class="px-8 py-3 rounded-xl bg-gray-800 hover:bg-gray-700 border border-gray-700 font-semibold transition transform hover:-translate-y-1">
+                <a href="https://github.com/xAk19x" target="_blank" class="px-8 py-3 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-white font-semibold transition transform hover:-translate-y-1">
                     GitHub Profile
                 </a>
-            </div>
-        </div>
-
-        <!-- Additional Animated Section -->
-        <div id="projects" class="mt-32 grid md:grid-cols-2 gap-8 text-left">
-            <div class="p-6 rounded-2xl bg-gray-900/60 border border-gray-800 backdrop-blur-md" data-aos="fade-up" data-aos-duration="1000">
-                <h3 class="text-xl font-bold text-purple-400 mb-2">Project One</h3>
-                <p class="text-gray-400">Description of your awesome animated project goes here. Built with modern web standards.</p>
-            </div>
-            <div class="p-6 rounded-2xl bg-gray-900/60 border border-gray-800 backdrop-blur-md" data-aos="fade-up" data-aos-duration="1200">
-                <h3 class="text-xl font-bold text-pink-400 mb-2">Project Two</h3>
-                <p class="text-gray-400">Description of another fantastic application or repository you've worked on.</p>
             </div>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="w-full text-center py-6 text-gray-500 text-sm border-t border-gray-800/60" data-aos="fade" data-aos-duration="1000">
+    <footer class="w-full text-center py-6 text-gray-500 text-sm border-t border-zinc-900" data-aos="fade" data-aos-duration="1000">
         <p>&copy; 2026 xAk19x. Powered by GitHub Pages.</p>
     </footer>
 
@@ -83,7 +70,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
-            once: true, // whether animation should happen only once - while scrolling down
+            once: true,
         });
     </script>
 </body>
